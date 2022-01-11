@@ -2,6 +2,7 @@ import React from 'react'
 import SingleBook from './SingleBook'
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import CommentArea from './CommentArea'
+import '../App.css'
 
 class BookList extends React.Component {
 
@@ -18,8 +19,8 @@ class BookList extends React.Component {
                         <Row>
                             <Col>
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Label>Search</Form.Label>
-                                    <Form.Control
+                                    <Form.Label></Form.Label>
+                                    <Form.Control className='search'
                                         type="text"
                                         placeholder="Search here"
                                         value={this.state.searchQuery}
