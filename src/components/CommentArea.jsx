@@ -54,7 +54,7 @@ const CommentArea = ({asin}) => {
                 {isLoading && <Loading />}
                 {isError && <Error />}
                 
-                <AddComment asin={asin} />
+                <AddComment fetchComments={fetchComments} asin={asin} />
                 <CommentList commentsToShow={comments} />
             </div>
         )

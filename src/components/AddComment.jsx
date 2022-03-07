@@ -35,7 +35,8 @@ class AddComment extends Component {
             })
             if (response.ok) {
                 // the comment has been sent succesfully!!
-                alert('Comment was sent!')
+               this.props.fetchComments()
+
             } else {
                 console.log('error')
                 alert('something went wrong')
